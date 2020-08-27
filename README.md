@@ -61,14 +61,12 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 ===============================================================
 2020/08/26 20:30:57 Finished
 ===============================================================
-
 ```
 
-The page on port 80 advertises a web shell: phpbash. It mentions the tool was built on this server which makes us think it could be accessible around. `/dev/phpbash.php` is its location.
+The page on port 80 advertises a web shell: phpbash. It mentions the tool was built on this server which makes us think it could be accessible. `/dev/phpbash.php` is its location.
 
 Get some situational awareness information using the shell:
 ```
-
 www-data@bashed:/var/www/html/dev# uname -a
 Linux bashed 4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
 
@@ -88,7 +86,4 @@ APACHE_LOG_DIR=/var/log/apache2
 PWD=/var/www/html/dev
 ```
 
-Some info got from the shell:
-```
-home/arrexel
-```
+It is possible already to grab the user flag from `home/arrexel`.
