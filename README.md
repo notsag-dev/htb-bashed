@@ -84,6 +84,15 @@ APACHE_RUN_USER=www-data
 APACHE_RUN_GROUP=www-data
 APACHE_LOG_DIR=/var/log/apache2
 PWD=/var/www/html/dev
+
+
+www-data@bashed:/var/www/html/dev# sudo -l
+
+Matching Defaults entries for www-data on bashed:
+env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on bashed:
+(scriptmanager : scriptmanager) NOPASSWD: ALL
 ```
 
 It is possible already to grab the user flag from `home/arrexel`.
