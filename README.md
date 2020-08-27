@@ -63,7 +63,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 ===============================================================
 ```
 
-The page on port 80 advertises a web shell: phpbash. It mentions the tool was built on this server which makes us think it could be accessible. `/dev/phpbash.php` is its location.
+The page on port 80 advertises a web shell: [phpbash](https://github.com/Arrexel/phpbash). It mentions the tool was built on this server which makes us think it could be accessible. `/dev/phpbash.php` is its location.
 
 Get some situational awareness information using the shell:
 ```
