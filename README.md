@@ -115,7 +115,7 @@ The kernel version can be obtained by executing `uname -a` is 4.4.0-62-generic.
 
 Let's check on searchsploit if that version of Linux kernel is vulnerable:
 ```
-kali@kali:~/deleteme$ searchsploit 4.4.0
+$ searchsploit 4.4.0
 ----------------------------------------------------------------------------------- ---------------------------------
  Exploit Title                                                                     |  Path
 ----------------------------------------------------------------------------------- ---------------------------------
